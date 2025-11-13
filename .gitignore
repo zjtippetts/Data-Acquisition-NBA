@@ -113,7 +113,7 @@ ipython_config.py
 #   pdm recommends including project-wide configuration in pdm.toml, but excluding .pdm-python.
 #   https://pdm-project.org/en/latest/usage/project/#working-with-version-control
 #pdm.lock
-#pdm.toml
+pdm.toml
 .pdm-python
 .pdm-build/
 
@@ -205,3 +205,16 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Project-specific: API keys and sensitive data
+*.key
+*.pem
+secrets.json
+
+# Large data files (uncomment if your dataset is too large for GitHub)
+# data/raw/*.csv
+# data/raw/*.json
+# data/processed/*.csv
+
+# Figures directory (optional - you may want to commit these)
+# figures/
